@@ -1,0 +1,160 @@
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+
+    &-top {
+      &-menu {
+        padding: 0 15px;
+        gap: 15px;
+
+        &-user-actions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &-new-ad {
+            padding: 5px 10px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 15px 15px;
+      gap: 10px;
+
+      &-logo {
+        padding: 10px;
+        margin-right: 0;
+        font-size: 30px;
+        flex: 0 0 auto;
+        text-align: center;
+      }
+
+      &-category {
+        flex: 0 0 auto;
+        order: 2;
+        width: 100%;
+
+        &-categories {
+          font-size: 14px;
+          padding: 5px 8px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      &-searching {
+        flex: 1 1 auto;
+        width: 100%;
+        order: 1;
+
+        &-search-input {
+          font-size: 14px;
+          height: 32px;
+          padding: 6px 10px;
+          width: 100%;
+        }
+
+        &-btn-search {
+          font-size: 14px;
+          height: 32px;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+
+  .main {
+    padding: 15px 15px;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    &-products {
+      padding: 15px 0;
+      gap: 15px;
+
+      &-list {
+        gap: 15px;
+
+        &-item {
+          flex: 1 1 calc(50% - 10px);
+
+          img {
+            height: 180px;
+          }
+
+          &-info {
+            padding: 8px 0;
+            gap: 6px;
+
+            &-name {
+              font-size: 18px;
+            }
+
+            &-cost {
+              font-size: 18px;
+            }
+
+            &-address {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding: 15px 15px;
+
+    &-products {
+      &-list {
+        &-item {
+          flex: 1 1 calc(33.33% - 10px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 15px 15px;
+
+    &-products {
+      &-list {
+        &-item {
+          flex: 1 1 calc(50% - 10px);
+
+          img {
+            height: 150px;
+          }
+
+          &-info {
+            &-name {
+              font-size: 16px;
+            }
+
+            &-cost {
+              font-size: 16px;
+            }
+
+            &-address {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
